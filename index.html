@@ -8,16 +8,16 @@
 
 body{
 margin:0;
-background:black;
-font-family:Arial;
+font-family:Arial, sans-serif;
 color:white;
+background:black;
 text-align:center;
 }
 
-/* HERO (parte de arriba) */
+/* HERO (parte del fondo con logo) */
+
 .hero{
-position:relative;
-height:650px;
+height:700px;
 background-image:url("images/bg.png");
 background-size:cover;
 background-position:center;
@@ -28,22 +28,25 @@ align-items:center;
 }
 
 /* LOGO */
+
 .logo{
-width:500px;
-animation:float 3s ease-in-out infinite;
+width:900px;
+max-width:90%;
+animation:float 4s ease-in-out infinite;
 }
 
-/* animacion leve */
-@keyframes flat{
-0%{transform:translateY(0px);}
-50%{transform:translateY(-10px);}
-100%{transform:translateY(0px);}
+/* ANIMACION */
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-20px);}
+100%{transform:translateY(0);}
 }
 
-/* boton download */
+/* BOTON DOWNLOAD */
+
 .download{
-margin-top:30px;
-padding:18px 40px;
+margin-top:40px;
+padding:18px 45px;
 font-size:22px;
 background:#ff2a6d;
 color:white;
@@ -57,18 +60,18 @@ background:#ff4f8b;
 transform:scale(1.05);
 }
 
-/* seccion negra */
+/* SECCION DE LINKS */
+
 .sections{
-background:black;
 padding:80px 20px;
+background:black;
 }
 
-/* botones de seccion */
 .section-btn{
 display:inline-block;
 margin:20px;
-padding:20px 40p;
-font-size:20px;
+padding:20px 40px;
+font-sze:20px;
 background:#111;
 border:2px solid #ff2a6d;
 color:white;
@@ -83,12 +86,10 @@ transform:scale(1.05);
 }
 
 </style>
-
 </head>
 
 <body>
 
-<!-- PARTE DE ARRIBA -->
 <div class="hero">
 
 <img class="logo" src="images/logo.png">
@@ -97,14 +98,13 @@ transform:scale(1.05);
 
 </div>
 
-<!-- PARTE NEGRA -->
 <div class="sections">
 
 <h2>Explore</h2>
 
 <a class="section-btn" href="#">Characters</a>
-<a class="section-bt" href="#">Lore</a>
-<a class="section-btn" href="#">Rivals</a>
+<a class="section-btn" href="#">Lore</a>
+<a class="section-btn" href="#">Rivls</a>
 
 </div>
 
