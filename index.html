@@ -5,31 +5,108 @@
 <title>Glass Hearts</title>
 
 <style>
+
 body{
+margin:0;
 background:black;
-color:white;
 font-family:Arial;
+color:white;
 text-align:center;
 }
 
-a{
-display:block;
-margin:20px;
-font-size:24px;
-color:red;
-text-decoration:none;
+/* HERO (parte de arriba) */
+.hero{
+position:relative;
+height:650px;
+background-image:url("images/bg.png");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 }
+
+/* LOGO */
+.logo{
+width:500px;
+animation:float 3s ease-in-out infinite;
+}
+
+/* animacion leve */
+@keyframes flat{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0px);}
+}
+
+/* boton download */
+.download{
+margin-top:30px;
+padding:18px 40px;
+font-size:22px;
+background:#ff2a6d;
+color:white;
+text-decoration:none;
+border-radius:10px;
+transition:0.3s;
+}
+
+.download:hover{
+background:#ff4f8b;
+transform:scale(1.05);
+}
+
+/* seccion negra */
+.sections{
+background:black;
+padding:80px 20px;
+}
+
+/* botones de seccion */
+.section-btn{
+display:inline-block;
+margin:20px;
+padding:20px 40p;
+font-size:20px;
+background:#111;
+border:2px solid #ff2a6d;
+color:white;
+text-decoration:none;
+border-radius:10px;
+transition:0.3s;
+}
+
+.section-btn:hover{
+background:#ff2a6d;
+transform:scale(1.05);
+}
+
 </style>
 
 </head>
 
 <body>
 
-<h1>GLASS HEARTS</h1>
+<!-- PARTE DE ARRIBA -->
+<div class="hero">
 
-<a href="lore.html">Lore</a>
-<a href="rivals.html">Rivals</a>
-<a href="characters.html">Characters</a>
+<img class="logo" src="images/logo.png">
+
+<a class="download" href="download.html">Download</a>
+
+</div>
+
+<!-- PARTE NEGRA -->
+<div class="sections">
+
+<h2>Explore</h2>
+
+<a class="section-btn" href="#">Characters</a>
+<a class="section-bt" href="#">Lore</a>
+<a class="section-btn" href="#">Rivals</a>
+
+</div>
 
 </body>
 
