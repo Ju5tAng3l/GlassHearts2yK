@@ -9,15 +9,15 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
-color:white;
 background:black;
+color:white;
 text-align:center;
 }
 
-/* HERO (parte del fondo con logo) */
+/* HERO */
 
 .hero{
-height:700px;
+height:100vh;
 background-image:url("images/bg.png");
 background-size:cover;
 background-position:center;
@@ -30,15 +30,17 @@ align-items:center;
 /* LOGO */
 
 .logo{
-width:900px;
-max-width:90%;
+width:70vw;
+max-width:1200px;
+height:auto;
 animation:float 4s ease-in-out infinite;
 }
 
 /* ANIMACION */
-@keyframes float{
+
+@keyframesfloat{
 0%{transform:translateY(0);}
-50%{transform:translateY(-20px);}
+50%{transform:translateY(-25px);}
 100%{transform:translateY(0);}
 }
 
@@ -57,10 +59,10 @@ transition:0.3s;
 
 .download:hover{
 background:#ff4f8b;
-transform:scale(1.05);
+transform:scale(1.08);
 }
 
-/* SECCION DE LINKS */
+/* SECCION ABAJO */
 
 .sections{
 padding:80px 20px;
@@ -71,8 +73,8 @@ background:black;
 display:inline-block;
 margin:20px;
 padding:20px 40px;
-font-sze:20px;
-background:#111;
+font-size:20px;
+backgound:#111;
 border:2px solid #ff2a6d;
 color:white;
 text-decoration:none;
@@ -104,10 +106,9 @@ transform:scale(1.05);
 
 <a class="section-btn" href="#">Characters</a>
 <a class="section-btn" href="#">Lore</a>
-<a class="section-btn" href="#">Rivls</a>
+<a class="section-btn" href="#">Rivals</a>
 
 </div>
-
 </body>
 
 </html>
