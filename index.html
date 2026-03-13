@@ -8,46 +8,51 @@
 
 body{
 margin:0;
-font-family:Arial, sans-serif;
 background:black;
+font-family:Arial, sans-serif;
 color:white;
 text-align:center;
 }
 
-/* HERO */
+/* fondo */
 
 .hero{
+position:relative;
 height:100vh;
 background-image:url("images/bg.png");
 background-size:cover;
 background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+overflow:hidden;
 }
 
-/* LOGO */
+/* logo encima del fondo */
 
 .logo{
-width:70vw;
-max-width:1200px;
-height:auto;
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:contain;
 animation:float 4s ease-in-out infinite;
-}
+pointer-events:none;
 
-/* ANIMACION */
 
-@keyframesfloat{
+/* animacion del logo */
+
+@keyframes float{
 0%{transform:translateY(0);}
-50%{transform:translateY(-25px);}
+50%{transform:translateY(-20px);}
 100%{transform:translateY(0);}
 }
 
-/* BOTON DOWNLOAD */
+/* boton */
 
 .download{
-margin-top:40px;
+position:absolute;
+bottom:60px;
+left:50%;
+transform:translateX(-50%);
 padding:18px 45px;
 font-size:22px;
 background:#ff2a6d;
@@ -59,14 +64,14 @@ transition:0.3s;
 
 .download:hover{
 background:#ff4f8b;
-transform:scale(1.08);
+transform:translateX(-50%) scale(1.1);
 }
 
-/* SECCION ABAJO */
+/* seccion negra */
 
 .sections{
-padding:80px 20px;
 background:black;
+padding:80px20px;
 }
 
 .section-btn{
@@ -74,7 +79,7 @@ display:inline-block;
 margin:20px;
 padding:20px 40px;
 font-size:20px;
-backgound:#111;
+background:#111;
 border:2px solid #ff2a6d;
 color:white;
 text-decoration:none;
@@ -104,11 +109,12 @@ transform:scale(1.05);
 
 <h2>Explore</h2>
 
-<a class="section-btn" href="#">Characters</a>
+<a class="section-btn" href="#">Charactrs</a>
 <a class="section-btn" href="#">Lore</a>
 <a class="section-btn" href="#">Rivals</a>
 
 </div>
+
 </body>
 
 </html>
