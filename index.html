@@ -35,24 +35,21 @@ max-width:80%;
 transition:transform 0.2s linear;
 }
 
-/* PARTE DE ABAJO */
+/* SECCION DE ABAJO */
 
 .bottom{
-height:600px;
-background:#140b08;
-background-image:radial-gradient(#ff6a0033 1px, transparent 1px);
-background-size:6px 6px;
-
+background:black;
 display:flex;
 justify-content:center;
 align-items:flex-start;
-padding-top:80px;
+padding-top:40px;
+padding-bottom:120px;
 }
 
 /* BOTON DOWNLOAD */
 
 .bottomdl{
-width:500px;
+width:420px;
 max-width:80%;
 cursor:pointer;
 transition:transform 0.2s;
@@ -86,8 +83,6 @@ window.addEventListener("scroll", function(){
 
 let scroll = window.scrollY;
 let logo = document.getElementById("logo");
-
-/* subir logo y achicarlo */
 
 let scale = Math.max(0.55, 1 - scroll / 900);
 let move = scroll * -0.25;
