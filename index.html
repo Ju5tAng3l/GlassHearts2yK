@@ -8,16 +8,14 @@
 
 body{
 margin:0;
-background:black;
+background:#000;
 font-family:Arial;
 overflow-x:hidden;
 }
 
 .hero{
 height:100vh;
-background-image:url("images/bg.png");
-background-size:cover;
-background-position:center;
+background:url("images/bg.png") center/cover no-repeat;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -32,17 +30,18 @@ transition:transform 0.2s linear;
 }
 
 .download-area{
-background:black;
 display:flex;
 justify-content:center;
 align-items:center;
-margin-top:-120px;
+background:#000;
+margin-top:-140px;
 padding-bottom:80px;
 position:relative;
-z-index:2;
+z-index:3;
 }
 
 .bottomdl{
+display:block;
 cursor:pointer;
 transition:transform 0.2s;
 }
