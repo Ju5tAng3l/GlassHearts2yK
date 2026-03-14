@@ -14,8 +14,6 @@ color:white;
 overflow-x:hidden;
 }
 
-/* HERO */
-
 .hero{
 height:100vh;
 background-image:url("images/bg.png");
@@ -27,26 +25,20 @@ align-items:center;
 position:relative;
 }
 
-/* LOGO */
-
 .logo{
 width:900px;
 max-width:80%;
 transition:transform 0.2s linear;
 }
 
-/* SECCION DE ABAJO */
-
 .bottom{
 background:black;
 display:flex;
 justify-content:center;
-align-items:flex-start;
-padding-top:40px;
-padding-bottom:120px;
+align-items:center;
+padding-top:80px;
+padding-bottom:200px;
 }
-
-/* BOTON DOWNLOAD */
 
 .bottomdl{
 width:420px;
@@ -59,6 +51,22 @@ transition:transform 0.2s;
 transform:scale(1.05);
 }
 
+.download-section{
+background:black;
+text-align:center;
+padding:200px 20px;
+}
+
+.download-button{
+display:inline-block;
+padding:20px 50px;
+background:#ff2a6d;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-size:22px;
+}
+
 </style>
 
 </head>
@@ -66,14 +74,24 @@ transform:scale(1.05);
 <body>
 
 <div class="hero">
-
 <img class="logo" id="logo" src="images/logo.png">
-
 </div>
 
 <div class="bottom">
-
+<a href="#download">
 <img class="bottomdl" src="images/BottomDl.png">
+</a>
+</div>
+
+<div id="download" class="download-section">
+
+<h1>Download</h1>
+
+<p>The mod is not available yet.</p>
+
+<a class="download-button" href="#">
+Download (Coming Soon)
+</a>
 
 </div>
 
