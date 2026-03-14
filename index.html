@@ -10,7 +10,6 @@ body{
 margin:0;
 background:black;
 font-family:Arial;
-color:white;
 overflow-x:hidden;
 }
 
@@ -31,9 +30,60 @@ max-width:80%;
 transition:transform 0.2s linear;
 }
 
-.bottom{
+.download-area{
 background:black;
 display:flex;
+justify-content:center;
+align-items:center;
+padding-top:40px;
+padding-bottom:120px;
+}
+
+.bottomdl{
+cursor:pointer;
+transition:transform 0.2s;
+}
+
+.bottomdl:hover{
+transform:scale(1.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+<img class="logo" id="logo" src="images/logo.png">
+</div>
+
+<div class="download-area">
+<a href="download.html">
+<img class="bottomdl" src="images/BottomDl.png">
+</a>
+</div>
+
+<script>
+
+window.addEventListener("scroll", function(){
+
+let scroll = window.scrollY;
+let logo = document.getElementById("logo");
+
+let scale = Math.max(0.55, 1 - scroll / 900);
+let move = scroll * -0.25;
+
+logo.style.transform =
+"translateY("+move+"px) scale("+scale+")";
+
+});
+
+</script>
+
+</body>
+
+</html>
 justify-content:center;
 align-items:center;
 padding-top:80px;
